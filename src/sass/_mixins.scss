@@ -1,0 +1,53 @@
+@mixin display-item-box($noHover: false) {
+    padding-left: 9px;
+    margin: 24px 0;
+
+    border: 1px solid $medium-grey;
+
+    h3 {
+        padding: 0;
+    }
+
+    @if $noHover {
+        &:hover {
+        }
+    } @else {
+        &:hover {
+            padding-left: 6px;
+            border-left-width: 4px;
+            border-left-color: $blue;
+        }
+
+    }
+}
+
+@mixin tight {
+    padding: 0;
+    margin: 0;
+}
+
+
+@mixin status-readonly {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    border-radius: $border-radius-base;
+
+    margin-left: 0;
+    font-weight: normal;
+    font-size: 10px;
+
+    &.live {
+        background-color: $brand-success;
+    }
+
+    &.paused {
+        background-color: lighten(#000, 80%);
+    }
+}
+
+
+.btn-navigate {
+    @include button-variant(black, $grey, darken($grey, 10%));
+}

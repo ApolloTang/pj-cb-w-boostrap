@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title hello!
+    link(rel="stylesheet", href="main.css")
+  body
+    // .modal-body
+    //     legend.clearfix
+    //         h3 Edit/New creative
+    //     form.form-horizontal
+    //         .row
+    //             .col-sm-7
+    //                 .panel.panel-default
+    //                     .panel-heading
+    //                         h3.panel-title Basics
+    //                     .panel-body
+    //              .col-sm-5
+    //                  small
+
+    .modal.fade#myModal
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button( type='button',
+                            class='close',
+                            data-dismiss='modal',
+                            aria-label='close'
+                    )
+                        span( aria-hidden='true') &times;
+
+                    h4.modal-title Modal title
+                .modal-body
+                    p one find body&hellip;
+
+
+    script(src="app.js")
+

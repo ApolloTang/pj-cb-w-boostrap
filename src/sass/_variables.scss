@@ -1,0 +1,78 @@
+// colors
+$concrete              : #95a5a6;
+$cloud                 : #ecf0f1;
+$silver                : #bdc3c7;
+$shadow-color          : rgb(221, 221, 221);
+$light-grey            : rgb(229, 229, 229);
+$medium-grey           : #BBBBBB;
+$dark-grey             : #545549;
+$blue                  : #3498db;
+$dark-blue             : #2C3E50;
+$red                   : #e74c3c;
+$green                 : #1abc9c;
+$grey                  : #F1F1F1;
+
+// light greens
+$emerald               : #2ecc71;
+$nephritis             : #27ae60;
+
+$gray-darkest          : lighten(#000, 13.5%); // #222
+$gray-darker           : lighten(#000, 20%);   // #333
+$gray-dark             : lighten(#000, 40%);   // #666
+$gray                  : lighten(#000, 60%);   // #999
+$gray-light            : lighten(#000, 87%);   // #bbb
+$gray-lighter          : lighten(#000, 87%);   // #ddd
+$gray-lightest         : lighten(#000, 93.5%); // #eee
+
+
+// ef color palette added 2015
+$ef-grey-dark2  : #4D4D4d;
+$ef-grey-dark1  : #888888;
+$ef-grey        : #C4C4C4;
+$ef-grey-light1 : #D9D9D9;
+$ef-grey-light2 : #EDEDED;
+
+
+$brand-primary         : lighten($blue, 10%);
+$brand-action          : #16a085; // #1abc9c;
+$brand-action-dark     : #16a085;
+$brand-success         : $green;
+$brand-success-dark    : #27ae60;
+$brand-info            : #3498db;
+$brand-info-dark       : #2980b9;
+$brand-background      : #34495e;
+$brand-background-dark : #2c3e50;
+$brand-warning         : #e67e22;
+$brand-warning-dark    : #d35400;
+$brand-danger-light    : lighten($red, 10%);
+$brand-danger          : #e74c3c;
+$brand-danger-dark     : #c0392b;
+
+$text-muted            : $gray;
+
+$tooltip-bg            : rgba(0,0,0,0.7);
+
+$border-radius-base    : 5px;
+$border-radius-large   : 7px;
+$border-radius-small   : 4px;
+$app-head-border-color : #D3D3D3;
+$header-bg-color       : lighten(#000, 30%);
+
+
+$footer-bg: lighten(#000, 90%);
+$label-default-bg: #777;
+
+$bullet-remaining-color: #96d8ea;
+$bullet-today-color: #b8e5f1;
+$bullet-default-color: #ededed;
+
+$bullet-ok-color: #5cb85c;
+$bullet-warning-color: #f0ad4e;
+$bullet-danger-color: #d9534f;
+
+$headings-small-color:        $ef-grey-dark1 !default;  // <-- ef-palette
+$text-color:                  $ef-grey-dark2 !default;  //<-- ef-pallette
+
+
+// device width
+$device-width-ipad : 1024px;
