@@ -17,26 +17,61 @@ html
     //              .col-sm-5
     //                  small
 
-    .modal.fade#myModal
-        .modal-dialog
+    .modal.fade#creative-builder
+        .modal-dialog.modal-size
             .modal-content
                 .modal-header
                     button( type='button', class='close', data-dismiss='modal', aria-label='close')
                         span( aria-hidden='true') &times;
-                    h4.modal-title Modal title
+                    h4.modal-title Edit/New Creative
                 .modal-body
-                    ul.nav.nav-tabs#creative-tab
-                        li.active
-                            a(data-target='#format' ) Format
-                        li
-                            a(data-target='#customize' ) Customize
-                    .tab-content
-                        .tab-pane.active#format
-                            p
-                                | format
-                        .tab-pane#customize
-                            p
-                                | customize content
+                    form.form-horizontal
+                        ul.nav.nav-tabs#creative-tab
+                            li.active
+                                a(data-target='#format' ) Format
+                            li
+                                a(data-target='#customize' ) Customize
+                        .tab-content
+                            .tab-pane.active#format
+                                p
+                                    | format
+                            .tab-pane#customize
+                                .row
+                                    .col-sm-6
+                                        p left
+                                    .col-sm-6
 
+                                        ul.nav.nav-tabs#asset-1-tab
+                                            li.active
+                                                a(data-target='#asset-1a' ) 1a
+                                            li
+                                                a(data-target='#asset-1b' ) 1b
+                                        .tab-content
+                                            .tab-pane.active#asset-1a
+                                                p asset 1a
+                                            .tab-pane#asset-1b
+                                                p asset 1b
+
+                                        ul.nav.nav-tabs#asset-2-tab
+                                            li.active
+                                                a(data-target='#asset-2a' ) 2a
+                                            li
+                                                a(data-target='#asset-2b' ) 2b
+                                        .tab-content
+                                            .tab-pane.active#asset-2a
+                                                p asset 2a
+                                            .tab-pane#asset-2b
+                                                p asset 2b
+
+                                        ul.nav.nav-tabs#asset-3-tab
+                                            li.active
+                                                a(data-target='#asset-3a' ) 3a
+                                            li
+                                                a(data-target='#asset-3b' ) 3b
+                                        .tab-content
+                                            .tab-pane.active#asset-3a
+                                                p asset 3a
+                                            .tab-pane#asset-3b
+                                                p asset 3b
     script(src="app.js")
 
