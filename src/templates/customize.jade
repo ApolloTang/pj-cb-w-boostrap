@@ -1,6 +1,34 @@
+.container-top
+    .row
+        .col-sm-12.full-width
+            // name
+            .form-inline
+                label
+                    span Creative Name
+                    i.fa.fa-asterisk.text-danger
+                input(data-id='name', autofocus, type='text' class='form-control x')
 
-.row
-    .col-sm-6
-        p left
-    .col-sm-6
-        include ./assets.jade
+.container-middle
+    .row
+        .col-sm-6
+            p simulator
+        .col-sm-6
+
+            // native:title (Title)
+            .form-group
+                label( for='title' class='col-sm-3 control-label')
+                    span Title
+                    i.fa.fa-asterisk.text-danger
+                .col-sm-9
+                    input( id='title' data-id='name', autofocus, type='text' class='form-control')
+
+            // native:text  (Content)
+            .form-group
+                label( for='text' class='col-sm-3 control-label')
+                    span Content
+                    i.fa.fa-asterisk.text-danger
+                .col-sm-9
+                    input( id='text' data-id='text', autofocus, type='text' class='form-control')
+
+            include ./assets.jade
+

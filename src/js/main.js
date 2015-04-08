@@ -4,7 +4,7 @@ var hello = require('./modules/hello');
 
 hello.sayHello();
 
-$('#creative-builder').modal('show');
+$('#ef-creative-builder').modal('show');
 
 $('#creative-tab a').click(function (e) {
   e.preventDefault();

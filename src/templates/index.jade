@@ -17,15 +17,15 @@ html
     //              .col-sm-5
     //                  small
 
-    .modal.fade#creative-builder
+    .modal.fade#ef-creative-builder
         .modal-dialog.modal-size
             .modal-content
                 .modal-header
                     button( type='button', class='close', data-dismiss='modal', aria-label='close')
                         span( aria-hidden='true') &times;
-                    h4.modal-title Edit/New Creative
+                    h4.modalx-title Edit/New Creative
                 .modal-body
-                    form.form-horizontal
+                    form
                         ul.nav.nav-tabs#creative-tab
                             li.active
                                 a(data-target='#format' ) Format
@@ -37,11 +37,6 @@ html
                                     | format
                             .tab-pane#customize
                                 include ./customize.jade
-                                // .row
-                                //     .col-sm-6
-                                //         p left
-                                //     .col-sm-6
-                                //         include ./assets.jade
 
     script(src="app.js")
 
