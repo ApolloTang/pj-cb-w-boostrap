@@ -19,8 +19,27 @@
         @media (min-width: $screen-md) and (max-width: $screen-lg) { width: 50%; }
         @media (min-width: $screen-lg) { width: 40%; }
     }
+
+    .form-group-wrap + .form-group-wrap {
+        padding-top: 5px;
+    }
+    .form-group-wrap {
+        padding-top: 20px;
+    }
+
     .form-group label {
         text-align:right;
+    }
+
+    .radio-wrap {
+        margin-left: 20px;
+        input {
+            margin-left: -20px;
+        }
+        span {
+           margin-left: 10px;
+           font-weight: normal;
+        }
     }
 
 

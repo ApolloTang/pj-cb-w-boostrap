@@ -24,3 +24,21 @@ include ./maxin-formGroupInput.jade
 
             include ./assets.jade
 
+            .panel.panel-default
+                .panel-heading
+                    h5 Click Through
+                .panel-body
+                    .radio-wrap
+                        label(for='third_party_clickthrough_true')
+                            input( type='radio' name='third_party_clickthrough' value='true' id='third_party_clickthrough_true')
+                            span I'm not using a third-party clicktracker.
+                    .radio-wrap
+                        label( for='third_party_clickthrough_false')
+                            input( type='radio' name='third_party_clickthrough' value='false' id='third_party_clickthrough_false')
+                            span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
+
+                    // native:title (Title)
+                    +formGroupInput('title', 'Title', true, 'text', 'native')
+
+                    // native:text  (Content)
+                    +formGroupInput('text', 'Content', true, 'text', 'native')

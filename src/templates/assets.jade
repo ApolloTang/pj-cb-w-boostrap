@@ -1,34 +1,34 @@
 include ./maxin-formGroupInput.jade
 
-.asset_wrap
-    ul.nav.nav-tabs#asset-1-tab
-        li
-            a(data-target='#asset-1a' ) Icon Uploaded Assets
-        li.active
-            a(data-target='#asset-1b' ) Icon Input by URL
-    .tab-content
-        .tab-pane#asset-1a
-            p asset 1a
-        .tab-pane.active#asset-1b
-            // native:icon_image_url (Icon Input URL)
-            +formGroupInput('icon_image_url', 'Icon Input URL', true, 'text', 'native')
-            // native:icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('icon_image_preview_url', 'Icon Preview URL', true, 'text', 'native')
-
-.asset_wrap
-    ul.nav.nav-tabs#asset-2-tab
-        li
-            a(data-target='#asset-2a' ) Banner Uploaded Assets
-        li.active
-            a(data-target='#asset-2b' ) Banner Input by URL
-    .tab-content
-        .tab-pane#asset-2a
-            p asset 2a
-        .tab-pane.active#asset-2b
-            // native:icon_image_url (Icon Input URL)
-            +formGroupInput('banner_image_url', 'Banner Image URL', true, 'text', 'native')
-            // native:icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('banner_image_preview_url', 'Banner Preview URL', true, 'text', 'native')
+// .asset_wrap
+//     ul.nav.nav-tabs#asset-1-tab
+//         li
+//             a(data-target='#asset-1a' ) Icon Uploaded Assets
+//         li.active
+//             a(data-target='#asset-1b' ) Icon Input by URL
+//     .tab-content
+//         .tab-pane#asset-1a
+//             p asset 1a
+//         .tab-pane.active#asset-1b
+//             // native:icon_image_url (Icon Input URL)
+//             +formGroupInput('icon_image_url', 'Icon Input URL', true, 'text', 'native')
+//             // native:icon_image_preview_url (Icon Preview URL)
+//             +formGroupInput('icon_image_preview_url', 'Icon Preview URL', true, 'text', 'native')
+//
+// .asset_wrap
+//     ul.nav.nav-tabs#asset-2-tab
+//         li
+//             a(data-target='#asset-2a' ) Banner Uploaded Assets
+//         li.active
+//             a(data-target='#asset-2b' ) Banner Input by URL
+//     .tab-content
+//         .tab-pane#asset-2a
+//             p asset 2a
+//         .tab-pane.active#asset-2b
+//             // native:icon_image_url (Icon Input URL)
+//             +formGroupInput('banner_image_url', 'Banner Image URL', true, 'text', 'native')
+//             // native:icon_image_preview_url (Icon Preview URL)
+//             +formGroupInput('banner_image_preview_url', 'Banner Preview URL', true, 'text', 'native')
 
 .asset_wrap
     ul.nav.nav-tabs#asset-3-tab
@@ -53,5 +53,7 @@ include ./maxin-formGroupInput.jade
             // standard:image_preview_url (Preview URL)
             // NOTE: this field is same as video_image_preview_url
             +formGroupInput('image_preview_url', 'Preview URL', true, 'text', 'MRAID HTMLJS standard')
+
+
 
 
