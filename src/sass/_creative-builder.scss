@@ -42,5 +42,44 @@
         }
     }
 
+    .form-group {
+        label {
+            span {
+                margin-right: 2px;
+            }
+            i.fa.fa-asterisk.text-danger {
+                vertical-align: super;
+                font-size:8px;
+            }
+        }
+    }
 
+    .asset-wrap + .asset-wrap {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top:15px;
+        margin-bottom: 15px;
+    }
+    .asset-wrap {
+        @include clearfix;
+
+        border-radius: 10px;
+        ul {
+            padding-top: 10px;
+            padding-left: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            background: #eeeeee;
+        }
+        .tab-content {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+    }
 }

@@ -4,11 +4,11 @@ include ./maxin-formGroupInput.jade
     .row
         .col-sm-12.full-width
             // name
-            .form-inline
-                label
-                    span Creative Name
-                    i.fa.fa-asterisk.text-danger
-                input(data-id='name', autofocus, type='text' class='form-control')
+            // .form-inline
+            //     label
+            //         span Creative Name
+            //         i.fa.fa-asterisk.text-danger
+            //     input(data-id='name', autofocus, type='text' class='form-control')
 
 .container-middle
     .row
@@ -37,8 +37,30 @@ include ./maxin-formGroupInput.jade
                             input( type='radio' name='third_party_clickthrough' value='false' id='third_party_clickthrough_false')
                             span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
 
-                    // native:title (Title)
-                    +formGroupInput('title', 'Title', true, 'text', 'native')
+                    // common:clickghrough_url (Clickthrough URL)
+                    +formGroupInput('clickghrough_url', 'Clickthrough URL', true, 'text', 'common')
 
-                    // native:text  (Content)
-                    +formGroupInput('text', 'Content', true, 'text', 'native')
+                    // common:landing_page  (Landing Page)
+                    +formGroupInput('landing_page', 'Landing Page', true, 'text', 'native')
+
+            .panel.panel-default
+                .panel-heading
+                    .row
+                        .col-xs-8
+                            h5 Third Party Pixels
+                        .col-xs-4
+                            button.btn.pull-right +Add
+                .panel-body
+
+                    div(class='input-group-wrap' data-useby='xxx')
+                        .input-group
+                            input( id='', data-id='', autofocus, type='', class='form-control')
+                            span(class='input-group-addon' id='xxxx') remove
+                    div(class='input-group-wrap' data-useby='xxx')
+                        .input-group
+                            input( id='', data-id='', autofocus, type='', class='form-control')
+                            span(class='input-group-addon' id='xxxx') remove
+                    div(class='input-group-wrap' data-useby='xxx')
+                        .input-group
+                            input( id='', data-id='', autofocus, type='', class='form-control')
+                            span(class='input-group-addon' id='xxxx') remove
