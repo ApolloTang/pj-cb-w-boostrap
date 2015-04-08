@@ -6,3 +6,8 @@ hello.sayHello();
 
 $('#myModal').modal('show');
 
+$('#creative-tab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+

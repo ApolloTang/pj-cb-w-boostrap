@@ -21,17 +21,22 @@ html
         .modal-dialog
             .modal-content
                 .modal-header
-                    button( type='button',
-                            class='close',
-                            data-dismiss='modal',
-                            aria-label='close'
-                    )
+                    button( type='button', class='close', data-dismiss='modal', aria-label='close')
                         span( aria-hidden='true') &times;
-
                     h4.modal-title Modal title
                 .modal-body
-                    p one find body&hellip;
-
+                    ul.nav.nav-tabs#creative-tab
+                        li.active
+                            a(data-target='#format' ) Format
+                        li
+                            a(data-target='#customize' ) Customize
+                    .tab-content
+                        .tab-pane.active#format
+                            p
+                                | format
+                        .tab-pane#customize
+                            p
+                                | customize content
 
     script(src="app.js")
 
