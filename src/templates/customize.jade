@@ -1,3 +1,5 @@
+include ./maxin-formGroupInput.jade
+
 .container-top
     .row
         .col-sm-12.full-width
@@ -6,29 +8,19 @@
                 label
                     span Creative Name
                     i.fa.fa-asterisk.text-danger
-                input(data-id='name', autofocus, type='text' class='form-control x')
+                input(data-id='name', autofocus, type='text' class='form-control')
 
 .container-middle
     .row
-        .col-sm-6
+        .col-md-5
             p simulator
-        .col-sm-6
+        .col-md-7
 
             // native:title (Title)
-            .form-group
-                label( for='title' class='col-sm-3 control-label')
-                    span Title
-                    i.fa.fa-asterisk.text-danger
-                .col-sm-9
-                    input( id='title' data-id='name', autofocus, type='text' class='form-control')
+            +formGroupInput('title', 'Title', true, 'text', 'native')
 
             // native:text  (Content)
-            .form-group
-                label( for='text' class='col-sm-3 control-label')
-                    span Content
-                    i.fa.fa-asterisk.text-danger
-                .col-sm-9
-                    input( id='text' data-id='text', autofocus, type='text' class='form-control')
+            +formGroupInput('text', 'Content', true, 'text', 'native')
 
             include ./assets.jade
 

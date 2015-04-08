@@ -4,19 +4,6 @@ html
     title hello!
     link(rel="stylesheet", href="main.css")
   body
-    // .modal-body
-    //     legend.clearfix
-    //         h3 Edit/New creative
-    //     form.form-horizontal
-    //         .row
-    //             .col-sm-7
-    //                 .panel.panel-default
-    //                     .panel-heading
-    //                         h3.panel-title Basics
-    //                     .panel-body
-    //              .col-sm-5
-    //                  small
-
     .modal.fade#ef-creative-builder
         .modal-dialog.modal-size
             .modal-content
@@ -25,7 +12,7 @@ html
                         span( aria-hidden='true') &times;
                     h4.modalx-title Edit/New Creative
                 .modal-body
-                    form
+                    form.form-horizontal
                         ul.nav.nav-tabs#creative-tab
                             li.active
                                 a(data-target='#format' ) Format

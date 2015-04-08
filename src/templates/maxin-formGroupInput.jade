@@ -1,0 +1,10 @@
+
+mixin formGroupInput(dataId, displayName, required, type, useBy)
+    div( class='form-group-wrap clearfix' data-useby='#{useBy}')
+        .form-group
+            label( for='#{dataId}' class='col-sm-3 control-label')
+                span #{displayName}
+                if (required === true )
+                    i.fa.fa-asterisk.text-danger
+            .col-sm-9
+                input( id='#{dataId}' data-id='#{dataId}', autofocus, type='#{type}' class='form-control')
