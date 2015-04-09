@@ -2,18 +2,15 @@ include ./maxin-formGroupInput.jade
 
 .container-top
     .row
-        .col-sm-12.full-width
-            // name
-            // .form-inline
-            //     label
-            //         span Creative Name
-            //         i.fa.fa-asterisk.text-danger
-            //     input(data-id='name', autofocus, type='text' class='form-control')
+        .col-sm-12
+            .full-width-centered
+                +formGroupInput('name', 'Creative Name', true, 'text', 'common')
 
 .container-middle
     .row
         .col-md-5
-            p simulator
+            .simulator-region-wrap.clearfix
+                .simulator-region
         .col-md-7
 
             // native:title (Title)
