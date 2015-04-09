@@ -61,3 +61,15 @@ include ./maxin-formGroupInput.jade
                         .input-group
                             input( id='', data-id='', autofocus, type='', class='form-control')
                             span(class='input-group-addon' id='xxxx') remove
+
+.container-bottom
+    .row
+        .col-sm-12
+            button(class='btn btn-link', data-action='cancel', type='button')
+                span Cancel
+            button(class='btn btn-success pull-right', data-action='save-and-audit', type='button')
+                i.fa.fa-floppy-o
+                span Save and Audit
+            button(class='btn btn-primary pull-right', data-action='save', type='button')
+                i.fa.fa-floppy-o
+                span Save

@@ -23,6 +23,17 @@
         border-top:1px solid #ddd;
     }
 
+    .container-bottom {
+        border-top:1px solid #ddd;
+        padding: 30px 8px;
+        button + button {
+            margin-right: 10px;
+        }
+        button span {
+            margin-left: 7px;
+        }
+    }
+
     .simulator-region-wrap {
         .simulator-region {
             margin: 50px auto;
