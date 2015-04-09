@@ -29,8 +29,8 @@
         button + button {
             margin-right: 10px;
         }
-        button span {
-            margin-left: 7px;
+        button > i + span {
+            margin-left: 5px;
         }
     }
 
@@ -113,6 +113,18 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
         }
-
     }
+
+    #format {
+        .container-top .form-group-wrap {
+            > *  {
+                padding: 0 20px;
+            }
+            label {
+                @media (min-width: $screen-sm) {float:right;}
+            }
+        }
+    }
+
+
 }

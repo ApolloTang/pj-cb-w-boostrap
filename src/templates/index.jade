@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title hello!
+    title creative-builder-static
     link(rel="stylesheet", href="main.css")
   body
     .modal.fade#ef-creative-builder
@@ -11,11 +11,6 @@ html
                     button( type='button', class='close', data-dismiss='modal', aria-label='close')
                         span( aria-hidden='true') &times;
                     h4.modalx-title Edit/New Creative
-                    // .form-inline
-                    //     label
-                    //         span Creative Name
-                    //         i.fa.fa-asterisk.text-danger
-                    //     input(data-id='name', autofocus, type='text' class='form-control')
                 .modal-body
                     form.form-horizontal
                         ul.nav.nav-tabs#creative-tab
@@ -25,8 +20,7 @@ html
                                 a(data-target='#customize' ) Customize
                         .tab-content
                             .tab-pane.active#format
-                                p
-                                    | format
+                                include ./format.jade
                             .tab-pane#customize
                                 include ./customize.jade
 

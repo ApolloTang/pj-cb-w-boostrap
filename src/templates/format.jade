@@ -1,0 +1,44 @@
+include ./maxin-formGroupInput.jade
+
+.container-top
+    .row
+        .col-sm-12
+            .full-width-centered
+                .row
+                    .col-sm-4
+                        div( class='form-group-wrap clearfix')
+                            .form-group
+                                label( for='format' class='control-label')
+                                    span Creative Format
+                                    i.fa.fa-asterisk.text-danger
+                    .col-sm-4
+                        div( class='form-group-wrap clearfix')
+                            .form-group
+                                select(data-id='format', class='form-control')
+                                    option(value='standard') Standard
+                                    option(value='standard') Standard
+                                    option(value='standard') Standard
+                                    option(value='standard') Standard
+                    .col-sm-4
+                        div( class='form-group-wrap clearfix')
+                            .form-group
+                                select(data-id='format', class='form-control')
+                                    option(value='standard') size
+                                    option(value='standard') size
+                                    option(value='standard') size
+
+.container-middle
+    .row
+        .col-md-12
+            .simulator-region-wrap.clearfix
+                .simulator-region
+
+
+
+.container-bottom
+    .row
+        .col-sm-12
+            button(class='btn btn-link', data-action='cancel', type='button')
+                span Cancel
+            button(class='btn btn-success pull-right', data-action='next', type='button')
+                span Next

@@ -11,7 +11,7 @@ $('#creative-tab a').click(function (e) {
   $(this).tab('show');
 });
 
-$('#creative-tab a[data-target="#customize"]').tab('show');
+$('#creative-tab a[data-target="#format"]').tab('show');
 
 $('#asset-1-tab a').click(function (e) {
   e.preventDefault();
