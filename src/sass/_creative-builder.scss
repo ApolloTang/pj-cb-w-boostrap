@@ -13,6 +13,15 @@
 }
 
 #ef-creative-builder {
+    .header {
+        padding:15px;
+        border-bottom: 1px solid #e5e5e5;
+        min-height: 16px;
+    }
+    .body {
+        position: relative;
+        padding: 15px;
+    }
 
     .container-top{
         padding-top: 10px;
