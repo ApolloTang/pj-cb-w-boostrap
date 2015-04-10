@@ -1,9 +1,11 @@
 to run:
+
+$ npm install
 $ gulp -p<port-number>
 
-    <port-number> = 9999 // <-- default
-    live reload use 40000 + <port-number>
-    localhost:<port-number>
+enter in brower: localhost:<port-number>
+
+
 
 
 
