@@ -11,7 +11,7 @@ $('#creative-tab a').click(function (e) {
   $(this).tab('show');
 });
 
-$('#creative-tab a[data-target="#format"]').tab('show');
+$('#creative-tab a[data-target="#customize"]').tab('show');
 
 $('#asset-1-tab a').click(function (e) {
   e.preventDefault();
@@ -24,6 +24,16 @@ $('#asset-2-tab a').click(function (e) {
 });
 
 $('#asset-3-tab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+
+$('#asset-4-tab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+
+$('#asset-5-tab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });

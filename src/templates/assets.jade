@@ -3,9 +3,9 @@ include ./maxin-formGroupInput.jade
 .asset-wrap
     ul.nav.nav-tabs#asset-1-tab
         li
-            a(data-target='#asset-1a' ) Icon Uploaded Assets
+            a(data-target='#asset-1a' ) Icon Image
         li.active
-            a(data-target='#asset-1b' ) Icon Input by URL
+            a(data-target='#asset-1b' ) URL
     .tab-content
         .tab-pane#asset-1a
             p asset 1a
@@ -18,42 +18,66 @@ include ./maxin-formGroupInput.jade
 .asset-wrap
     ul.nav.nav-tabs#asset-2-tab
         li
-            a(data-target='#asset-2a' ) Banner Uploaded Assets
+            a(data-target='#asset-2a' ) Main Image
         li.active
-            a(data-target='#asset-2b' ) Banner Input by URL
+            a(data-target='#asset-2b' ) URL
     .tab-content
         .tab-pane#asset-2a
-            p asset 2a
+            p asset 1a
         .tab-pane.active#asset-2b
-            // native:icon_image_url (Icon Input URL)
-            +formGroupInput('banner_image_url', 'Banner Image URL', true, 'text', 'native')
-            // native:icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('banner_image_preview_url', 'Banner Preview URL', true, 'text', 'native')
+            // native:image_url (Input URL)
+            +formGroupInput('main_image_url', 'Main Image URL', true, 'text', 'video', 'native')
+            // native:image_preview_url (Preview URL)
+            +formGroupInput('main_impage_preview_url', 'Main Image Preview URL', true, 'text', 'native')
 
 .asset-wrap
     ul.nav.nav-tabs#asset-3-tab
         li
-            a(data-target='#asset-3a' ) Uploaded Assets
+            a(data-target='#asset-3a' ) Banner/References Image
         li.active
-            a(data-target='#asset-3b' ) Input By Url
+            a(data-target='#asset-3b' ) URL
     .tab-content
         .tab-pane#asset-3a
             p asset 3a
         .tab-pane.active#asset-3b
-            // video:video_image_preview_url (Image Preview URL)
-            +formGroupInput('video_image_preview_url', 'Image Preview URL', true, 'text', 'video')
-            // video:video_url (Video URL)
+            // native:icon_image_url (Icon Input URL)
+            +formGroupInput('image_url', 'Banner URL', true, 'text', 'standard')
+            // native:icon_image_preview_url (Icon Preview URL)
+            +formGroupInput('image_preview_url', 'BannerPreview URL', true, 'text', 'standard')
+            // native:icon_image_preview_url (Icon Preview URL)
+            +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'HTMLJS MRAID')
+
+.asset-wrap
+    ul.nav.nav-tabs#asset-4-tab
+        li
+            a(data-target='#asset-4a' ) Video
+        li.active
+            a(data-target='#asset-4b' ) URL
+    .tab-content
+        .tab-pane#asset-4a
+            p asset 4a
+        .tab-pane.active#asset-4b
+            // video:
             +formGroupInput('video_url', 'Video URL', true, 'text', 'video')
-            // video:image_preview_url (Video Preview URL)
-            +formGroupInput('banner_image_preview_url', 'Video Preview URL', true, 'text', 'video')
-            // standard:image_url (Input URL)
-            +formGroupInput('image_url', 'Input URL', true, 'text', 'video', 'standard')
-            // MRAID:image_preview_url (Preview URL)
-            // HTMLJS:image_preview_url (Preview URL)
-            // standard:image_preview_url (Preview URL)
-            // NOTE: this field is same as video_image_preview_url
-            +formGroupInput('image_preview_url', 'Preview URL', true, 'text', 'MRAID HTMLJS standard')
+            // video:
+            +formGroupInput('video_preview_url', 'Video Preview URL', false, 'text', 'video')
+            // video:
+            +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'video')
 
 
+.asset-wrap
+    ul.nav.nav-tabs#asset-5-tab
+        li
+            a(data-target='#asset-5a' ) Companion Ad
+        li.active
+            a(data-target='#asset-5b' ) URL
+    .tab-content
+        .tab-pane#asset-5a
+            p asset 5a
+        .tab-pane.active#asset-5b
+            // video:video_image_preview_url (Image Preview URL)
+            +formGroupInput('companion_url', 'Companion Banner URL', true, 'text', 'videoCompanion')
+            // video:video_url (Video URL)
+            +formGroupInput('companion_preview_url', 'Companion Banner Preview URL', true, 'text', 'videoCompanion')
 
 

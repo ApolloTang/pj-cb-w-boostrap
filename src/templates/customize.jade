@@ -13,13 +13,24 @@ include ./maxin-formGroupInput.jade
                 .simulator-region
         .col-lg-7
 
-            // native:title (Title)
-            +formGroupInput('title', 'Title', true, 'text', 'native')
-
-            // native:text  (Content)
-            +formGroupInput('text', 'Content', true, 'text', 'native')
 
             include ./assets.jade
+
+            .panel.panel-default
+                .panel-heading
+                    h5 Content
+                .panel-body
+                    // native:title (Title)
+                    +formGroupInput('title', 'Title', true, 'text', 'native')
+
+                    // native:text  (Content)
+                    +formGroupInput('text', 'Content', true, 'text', 'native')
+
+                    // native:
+                    +formGroupInput('call_to_action', 'Call To Action', true, 'text', 'native')
+
+                    // native:
+                    +formGroupInput('star_rating', 'Star Rating', true, 'text', 'native')
 
             .panel.panel-default
                 .panel-heading
