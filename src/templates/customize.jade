@@ -9,69 +9,72 @@ include ./maxin-formGroupInput.jade
 .container-middle
     .row
         .col-lg-5
-            .simulator-region-wrap.clearfix
+            .wrap-simulator-region.clearfix
                 .simulator-region
         .col-lg-7
+            .wrap-form.clearfix
 
+                include ./editor.jade
 
-            include ./assets.jade
+                include ./assets.jade
 
-            .panel.panel-default
-                .panel-heading
-                    h5 Content
-                .panel-body
-                    // native:title (Title)
-                    +formGroupInput('title', 'Title', true, 'text', 'native')
+                .panel.panel-default
+                    .panel-heading
+                        h5 Content
+                    .panel-body
+                        // native:title (Title)
+                        +formGroupInput('title', 'Title', true, 'text', 'native')
 
-                    // native:text  (Content)
-                    +formGroupInput('text', 'Content', true, 'text', 'native')
+                        // native:text  (Content)
+                        +formGroupInput('text', 'Content', true, 'text', 'native')
 
-                    // native:
-                    +formGroupInput('call_to_action', 'Call To Action', true, 'text', 'native')
+                        // native:
+                        +formGroupInput('call_to_action', 'Call To Action', true, 'text', 'native')
 
-                    // native:
-                    +formGroupInput('star_rating', 'Star Rating', true, 'text', 'native')
+                        // native:
+                        +formGroupInput('star_rating', 'Star Rating', true, 'text', 'native')
 
-            .panel.panel-default
-                .panel-heading
-                    h5 Click Through
-                .panel-body
-                    .radio-wrap
-                        label(for='third_party_clickthrough_true')
-                            input( type='radio' name='third_party_clickthrough' value='true' id='third_party_clickthrough_true')
-                            span I'm not using a third-party clicktracker.
-                    .radio-wrap
-                        label( for='third_party_clickthrough_false')
-                            input( type='radio' name='third_party_clickthrough' value='false' id='third_party_clickthrough_false')
-                            span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
+                .panel.panel-default
+                    .panel-heading
+                        h5 Click Through
+                    .panel-body
+                        .radio-collection
+                            .radio-wrap
+                                label(for='third_party_clickthrough_true')
+                                    input( type='radio' name='third_party_clickthrough' value='true' id='third_party_clickthrough_true')
+                                    span I'm not using a third-party clicktracker.
+                            .radio-wrap
+                                label( for='third_party_clickthrough_false')
+                                    input( type='radio' name='third_party_clickthrough' value='false' id='third_party_clickthrough_false')
+                                    span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
 
-                    // common:clickghrough_url (Clickthrough URL)
-                    +formGroupInput('clickghrough_url', 'Clickthrough URL', true, 'text', 'common')
+                        // common:clickghrough_url (Clickthrough URL)
+                        +formGroupInput('clickghrough_url', 'Clickthrough URL', true, 'text', 'common')
 
-                    // common:landing_page  (Landing Page)
-                    +formGroupInput('landing_page', 'Landing Page', true, 'text', 'native')
+                        // common:landing_page  (Landing Page)
+                        +formGroupInput('landing_page', 'Landing Page', true, 'text', 'native')
 
-            .panel.panel-default
-                .panel-heading
-                    .row
-                        .col-xs-8
-                            h5 Third Party Pixels
-                        .col-xs-4
-                            button.btn.pull-right +Add
-                .panel-body
+                .panel.panel-default
+                    .panel-heading
+                        .row
+                            .col-xs-8
+                                h5 Third Party Pixels
+                            .col-xs-4
+                                button.btn.pull-right +Add
+                    .panel-body
 
-                    div(class='input-group-wrap' data-useby='xxx')
-                        .input-group
-                            input( id='', data-id='', autofocus, type='', class='form-control')
-                            span(class='input-group-addon' id='xxxx') remove
-                    div(class='input-group-wrap' data-useby='xxx')
-                        .input-group
-                            input( id='', data-id='', autofocus, type='', class='form-control')
-                            span(class='input-group-addon' id='xxxx') remove
-                    div(class='input-group-wrap' data-useby='xxx')
-                        .input-group
-                            input( id='', data-id='', autofocus, type='', class='form-control')
-                            span(class='input-group-addon' id='xxxx') remove
+                        div(class='input-group-wrap' data-useby='xxx')
+                            .input-group
+                                input( id='', data-id='', autofocus, type='', class='form-control')
+                                span(class='input-group-addon' id='xxxx') remove
+                        div(class='input-group-wrap' data-useby='xxx')
+                            .input-group
+                                input( id='', data-id='', autofocus, type='', class='form-control')
+                                span(class='input-group-addon' id='xxxx') remove
+                        div(class='input-group-wrap' data-useby='xxx')
+                            .input-group
+                                input( id='', data-id='', autofocus, type='', class='form-control')
+                                span(class='input-group-addon' id='xxxx') remove
 
 .container-bottom
     .row
