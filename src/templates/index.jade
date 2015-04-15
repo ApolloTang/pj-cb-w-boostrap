@@ -7,6 +7,8 @@ html
     .modal.fade#ef-creative-builder
         .modal-dialog.modal-size
             .modal-content
+                // --------- cut here  --------------------
+                //<div id="modal-body">
                 .header
                     button( type='button', class='close', data-dismiss='modal', aria-label='close')
                         span( aria-hidden='true') &times;
@@ -23,6 +25,7 @@ html
                                 include ./format.jade
                             .tab-pane#customize
                                 include ./customize.jade
-
+                //</div>
+                // ----------------- cut here  --------------------
     script(src="app.js")
 

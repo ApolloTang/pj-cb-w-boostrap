@@ -4,7 +4,8 @@ include ./maxin-formGroupInput.jade
     .row
         .col-sm-12
             .full-width-centered
-                +formGroupInput('name', 'Creative Name', true, 'text', 'common')
+                //all : name
+                +formGroupInput('name', 'Creative Name', true, 'text', 'all')
 
 .container-middle
     .row
@@ -18,63 +19,62 @@ include ./maxin-formGroupInput.jade
 
                 include ./assets.jade
 
-                .panel.panel-default
+                //native : (Content)
+                .panel.panel-default(data-used-by='native')
                     .panel-heading
                         h5 Content
                     .panel-body
-                        // native:title (Title)
-                        +formGroupInput('title', 'Title', true, 'text', 'native')
+                        //native : title (Title)
+                        +formGroupInput('title', 'Ad Title', true, 'text', 'native')
 
-                        // native:text  (Content)
-                        +formGroupInput('text', 'Content', true, 'text', 'native')
+                        //native : text  (Content)
+                        +formGroupInput('text', ' Main Text', true, 'text', 'native')
 
-                        // native:
-                        +formGroupInput('call_to_action', 'Call To Action', true, 'text', 'native')
+                        //native : call_to_action (Call To Action)
+                        +formGroupInput('call_to_action', 'Call To Action', false, 'text', 'native')
 
-                        // native:
-                        +formGroupInput('star_rating', 'Star Rating', true, 'text', 'native')
+                        //native : star_rating (Star Rating)
+                        +formGroupInput('star_rating', 'Star Rating', false, 'text', 'native')
 
+                //(Clickthrough)
                 .panel.panel-default
                     .panel-heading
-                        h5 Click Through
+                        h5 Clickthrough
                     .panel-body
                         .radio-collection
                             .radio-wrap
-                                label(for='third_party_clickthrough_true')
-                                    input( type='radio' name='third_party_clickthrough' value='true' id='third_party_clickthrough_true')
-                                    span I'm not using a third-party clicktracker.
+                                label(for='third_party_clickthrough_false')
+                                input#third_party_clickthrough_false(type='radio', name='third_party_clickthrough', value='false', data-id='third_party_clickthrough')
+                                span I'm not using a third-party clicktracker.
                             .radio-wrap
-                                label( for='third_party_clickthrough_false')
-                                    input( type='radio' name='third_party_clickthrough' value='false' id='third_party_clickthrough_false')
-                                    span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
+                                label(for='third_party_clickthrough_true')
+                                input#third_party_clickthrough_true(type='radio', name='third_party_clickthrough', value='true', data-id='third_party_clickthrough')
+                                span I'm using a third-party clicktracker. The banner links to a third-party adserver, which redirects the user to the landing page.
 
-                        // common:clickghrough_url (Clickthrough URL)
-                        +formGroupInput('clickghrough_url', 'Clickthrough URL', true, 'text', 'common')
+                        //common : clickghrough_url (Clickthrough URL)
+                        +formGroupInput('clickghrough_url', 'Clickthrough URL', true, 'text', 'all')
 
-                        // common:landing_page  (Landing Page)
-                        +formGroupInput('landing_page', 'Landing Page', true, 'text', 'native')
+                        //common : landing_page (Landing Page)
+                        +formGroupInput('landing_page', 'Landing Page', true, 'text', 'all')
 
-                .panel.panel-default
+                //(Third Party Pixel)
+                .panel.panel-default.section-third-party-pixel
                     .panel-heading
                         .row
                             .col-xs-8
                                 h5 Third Party Pixels
                             .col-xs-4
-                                button.btn.pull-right +Add
-                    .panel-body
-
-                        div(class='input-group-wrap' data-useby='xxx')
-                            .input-group
-                                input( id='', data-id='', autofocus, type='', class='form-control')
-                                span(class='input-group-addon' id='xxxx') remove
-                        div(class='input-group-wrap' data-useby='xxx')
-                            .input-group
-                                input( id='', data-id='', autofocus, type='', class='form-control')
-                                span(class='input-group-addon' id='xxxx') remove
-                        div(class='input-group-wrap' data-useby='xxx')
-                            .input-group
-                                input( id='', data-id='', autofocus, type='', class='form-control')
-                                span(class='input-group-addon' id='xxxx') remove
+                                button( class='btn pull-right', data-action='add-pixel') +Add
+                    .panel-body.pixel-input-container
+                        .input-group-wrap.pixel-row(data-used-by='xxx')
+                          .input-group
+                            input.form-control(data-id='third_party_pixels', type='text')
+                            span.input-group-addon(data-action='remove-pixel') remove
+                    .pixel-template.hide
+                        .input-group-wrap.pixel-row(data-used-by='xxx')
+                          .input-group
+                            input.form-control(data-id='third_party_pixels', type='text')
+                            span.input-group-addon(data-action='remove-pixel') remove
 
 .container-bottom
     .row
