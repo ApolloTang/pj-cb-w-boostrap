@@ -31,10 +31,10 @@ include ./maxin-formGroupInput.jade
             // native: main_image_preview_url (Main Image Preview URL)
             +formGroupInput('main_image_preview_url', 'Main Image Preview URL', false, 'text', 'native')
 
-.asset-wrap(data-used-by='standard MRAID HTMLJS')
+.asset-wrap(data-used-by='standard')
     ul.nav.nav-tabs#asset-3-tab
         li
-            a(data-target='#asset-3a' ) Banner/References Image
+            a(data-target='#asset-3a' ) Banner
         li.active
             a(data-target='#asset-3b' ) URL
     .tab-content
@@ -44,20 +44,31 @@ include ./maxin-formGroupInput.jade
             // standard MRAID HTMLJS : icon_image_url (Icon Input URL)
             +formGroupInput('image_url', 'Banner URL', true, 'text', 'standard')
             // standard MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('image_preview_url', 'BannerPreview URL', false, 'text', 'standard')
-            // standard MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'MRAID HTMLJS')
+            +formGroupInput('image_preview_url', 'Banner Preview URL', false, 'text', 'standard')
 
-.asset-wrap(data-used-by='video')
+.asset-wrap(data-used-by='MRAID HTMLJS')
     ul.nav.nav-tabs#asset-4-tab
         li
-            a(data-target='#asset-4a' ) Video
+            a(data-target='#asset-4a' ) References Image
         li.active
             a(data-target='#asset-4b' ) URL
     .tab-content
         .tab-pane#asset-4a
             .assets-helper-4
         .tab-pane.active#asset-4b
+            // standard MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
+            +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'MRAID HTMLJS')
+
+.asset-wrap(data-used-by='video')
+    ul.nav.nav-tabs#asset-5-tab
+        li
+            a(data-target='#asset-5a' ) Video
+        li.active
+            a(data-target='#asset-5b' ) URL
+    .tab-content
+        .tab-pane#asset-5a
+            .assets-helper-5
+        .tab-pane.active#asset-5b
             // video : video_url (video URL)
             +formGroupInput('video_url', 'Video URL', true, 'text', 'video')
             // video : video_preview_url (Video Preview URL)
@@ -67,15 +78,15 @@ include ./maxin-formGroupInput.jade
 
 
 .asset-wrap(data-used-by='video')
-    ul.nav.nav-tabs#asset-5-tab
+    ul.nav.nav-tabs#asset-6-tab
         li
-            a(data-target='#asset-5a' ) Companion Ad
+            a(data-target='#asset-6a' ) Companion Ad
         li.active
-            a(data-target='#asset-5b' ) URL
+            a(data-target='#asset-6b' ) URL
     .tab-content
-        .tab-pane#asset-5a
-            .assets-helper-5
-        .tab-pane.active#asset-5b
+        .tab-pane#asset-6a
+            .assets-helper-6
+        .tab-pane.active#asset-6b
             // video : companion_url (Companion Banner URL)
             +formGroupInput('companion_url', 'Companion Banner URL', true, 'text', 'videoCompanion')
             // video : companion_preview_url (Companion Banner Preview URL)

@@ -37,3 +37,8 @@ $('#asset-5-tab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
+
+$('#asset-6-tab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
