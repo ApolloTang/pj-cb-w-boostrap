@@ -1,7 +1,7 @@
 include ./maxin-formGroupInput.jade
 
 //native : (Icon Image)
-.asset-wrap(data-used-by='native')
+.asset-wrap(data-used-by='native' data-assets-section='icon')
     ul.nav.nav-tabs#asset-1-tab
         li
             a(data-target='#asset-1a' ) Icon Image
@@ -11,12 +11,14 @@ include ./maxin-formGroupInput.jade
         .tab-pane#asset-1a
             .assets-helper-1
         .tab-pane.active#asset-1b
+            //native: icon_image_asset (Icon Input URL)
+            +formGroupInput('icon_image_asset', 'Icon Input URL', true, 'hidden', 'native')
             //native: icon_image_url (Icon Input URL)
             +formGroupInput('icon_image_url', 'Icon Input URL', true, 'text', 'native')
             //native: icon_image_preview_url (Icon Preview URL)
             +formGroupInput('icon_image_preview_url', 'Icon Preview URL', false, 'text', 'native')
 
-.asset-wrap(data-used-by='native')
+.asset-wrap(data-used-by='native' data-assets-section='main_img')
     ul.nav.nav-tabs#asset-2-tab
         li
             a(data-target='#asset-2a' ) Main Image
@@ -31,7 +33,7 @@ include ./maxin-formGroupInput.jade
             // native: main_image_preview_url (Main Image Preview URL)
             +formGroupInput('main_image_preview_url', 'Main Image Preview URL', false, 'text', 'native')
 
-.asset-wrap(data-used-by='standard')
+.asset-wrap(data-used-by='standard' data-assets-section='banner')
     ul.nav.nav-tabs#asset-3-tab
         li
             a(data-target='#asset-3a' ) Banner
@@ -46,7 +48,7 @@ include ./maxin-formGroupInput.jade
             // standard MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
             +formGroupInput('image_preview_url', 'Banner Preview URL', false, 'text', 'standard')
 
-.asset-wrap(data-used-by='MRAID HTMLJS')
+.asset-wrap(data-used-by='MRAID HTMLJS' data-assets-section='reference_img')
     ul.nav.nav-tabs#asset-4-tab
         li
             a(data-target='#asset-4a' ) References Image
@@ -59,7 +61,7 @@ include ./maxin-formGroupInput.jade
             // standard MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
             +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'MRAID HTMLJS')
 
-.asset-wrap(data-used-by='video')
+.asset-wrap(data-used-by='video' data-assets-section='video')
     ul.nav.nav-tabs#asset-5-tab
         li
             a(data-target='#asset-5a' ) Video
@@ -77,7 +79,7 @@ include ./maxin-formGroupInput.jade
             +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'video')
 
 
-.asset-wrap(data-used-by='video')
+.asset-wrap(data-used-by='video' data-assets-section='companion_ad')
     ul.nav.nav-tabs#asset-6-tab
         li
             a(data-target='#asset-6a' ) Companion Ad
