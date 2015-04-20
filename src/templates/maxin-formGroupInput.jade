@@ -9,3 +9,8 @@ mixin formGroupInput(dataId, displayName, required, type, useBy)
             .col-sm-9
                 input( id='#{dataId}' data-id='#{dataId}', type='#{type}' class='form-control')
                 .help-block
+
+mixin formGroupInputHidden(dataId, required, useBy)
+    div( data-used-by='#{useBy}' style='display: none')
+        .form-group
+            input( id='#{dataId}' data-id='#{dataId}', type='hidden')
