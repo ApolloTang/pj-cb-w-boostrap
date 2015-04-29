@@ -57,8 +57,8 @@ include ./maxin-formGroupInput.jade
             +formGroupInput('image_preview_url', 'Banner Preview URL', false, 'text', 'standard')
 
 
-// MRAID HTMLJS : (Reference Screenshot)
-.asset-wrap(data-used-by='MRAID HTMLJS' data-assets-section='reference_img')
+// mriad content_html : (Reference Screenshot)
+.asset-wrap(data-used-by='mriad content_html' data-assets-section='reference_img')
     ul.nav.nav-tabs#asset-4-tab
         li
             a(data-target='#asset-4a' ) References Image
@@ -68,10 +68,10 @@ include ./maxin-formGroupInput.jade
         .tab-pane#asset-4a
             .assets-helper-4
         .tab-pane.active#asset-4b
-            // MRAID HTMLJS : image_asset (hidden)
-            +formGroupInputHidden('image_asset', true, 'MRAID HTMLJS')
-            // MRAID HTMLJS : icon_image_preview_url (Icon Preview URL)
-            +formGroupInput('image_preview_url', 'Reference Screenshot', true, 'text', 'MRAID HTMLJS')
+            // mriad content_html : image_asset (hidden)
+            +formGroupInputHidden('reference_image_asset', true, 'mriad content_html')
+            // mriad content_html : icon_image_preview_url (Icon Preview URL)
+            +formGroupInput('reference_image_preview_url', 'Reference Screenshot', true, 'text', 'mriad content_html')
 
 // video : (Video)
 .asset-wrap(data-used-by='video' data-assets-section='video')
