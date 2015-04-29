@@ -14,3 +14,7 @@ mixin formGroupInputHidden(dataId, required, useBy)
     div( data-used-by='#{useBy}' style='display: none')
         .form-group
             input( id='#{dataId}' data-id='#{dataId}', type='hidden')
+//-    // debug: use to revieal hidden field
+//-    div( data-used-by='#{useBy}' style='')
+//-        .form-group
+//-            input( id='#{dataId}' data-id='#{dataId}', type='text')
